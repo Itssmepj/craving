@@ -1,0 +1,160 @@
+@media screen and (max-width: 768px) {
+    .preloader-text {
+        font-size: 10vw;
+    }
+
+    .logo {
+        font-size: 10vw;
+    }
+
+    .btn-primary {
+        font-size: 4vw;
+        padding: 1.8vw 5vw;
+    }
+
+    .menu-text {
+        font-size: 4vw;
+    }
+
+    .hamburger {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .bar {
+        height: 0.5vw;
+    }
+
+    .main-menu {
+        width: 91vw;
+        border-radius: 4vw;
+        padding: 6vw;
+        margin-top: 5vw;
+    }
+
+    .main-menu a {
+        font-size: 8vw;
+    }
+
+    .menu-footer p {
+        font-size: 3.5vw;
+    }
+
+    .hero-section {
+        padding-top: 40vw;
+        height: 200vw;
+        padding-bottom: 2vw;
+    }
+
+    .hero-title {
+        font-size: 26vw;
+        line-height: 0.85;
+    }
+
+    .hero-subtitle {
+        font-size: 6vw;
+        transform: none !important;
+    }
+
+    .hero-subtitle.top-left {
+        top: 2%;
+        left: 2%;
+    }
+
+    .hero-subtitle.bottom-right {
+        bottom: 2%;
+        right: 2%;
+    }
+
+    .hero-image-wrapper {
+        width: 80vw;
+        height: 80vw;
+        top: 110vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-crav-text {
+        font-size: 20vw;
+        margin-top: 6vw;
+        position: absolute;
+        top: 133vw;
+        transform: translateY(-50%);
+    }
+
+    .hero-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+        padding: 0 5vw;
+        position: static;
+        margin-top: auto;
+    }
+
+    .hero-desc {
+        width: 100%;
+    }
+
+    .hero-desc p, .hero-desc.right p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .about-section {
+        padding-top: 10vw;
+    }
+
+    .about-top-text {
+        font-size: 8vw;
+        width: fit-content;
+        margin: 0 auto;
+        top: 0;
+    }
+
+    .about-title {
+        font-size: 15vw;
+        width: 100%;
+        line-height: 0.9;
+    }
+
+    .about-desc {
+        font-size: 4vw;
+        width: 90%;
+        margin-top: 6vw;
+    }
+
+    .btn-order {
+        font-size: 5vw;
+        padding: 4vw 10vw;
+    }
+
+    .about-images-container {
+        padding: 0 4vw 12vw;
+    }
+
+    .floating-sticker {
+        width: 25vw;
+        top: -30vw;
+        left: -4vw;
+    }
+
+    .about-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 2vw;
+        max-width: 100%;
+        padding-top: 4vw;
+        padding-bottom: 2vw;
+    }
+
+    .about-img-item {
+        width: 35vw;
+        height: 38vw;
+        flex-shrink: 0;
+    }
+
+    .img-1 { transform: rotate(-12deg) translateY(3vw); }
+    .img-2 { transform: translateY(-6vw); z-index: 10; }
+    .img-3 { transform: rotate(12deg) translateY(3vw); }
+}
