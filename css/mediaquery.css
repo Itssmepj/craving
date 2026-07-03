@@ -157,4 +157,153 @@
     .img-1 { transform: rotate(-12deg) translateY(3vw); }
     .img-2 { transform: translateY(-6vw); z-index: 10; }
     .img-3 { transform: rotate(12deg) translateY(3vw); }
+
+    /* Experience Section Responsive */
+    .experience-section {
+        padding: 15vw 0 8vw;
+    }
+
+    .exp-top-text {
+        font-size: 5vw;
+    }
+
+    .exp-title {
+        font-size: 15vw;
+        -webkit-text-stroke: 1px var(--color-black);
+    }
+
+    .exp-features {
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .feature-highlight {
+        font-size: 8vw;
+    }
+
+    .feature-text {
+        font-size: 4vw;
+    }
+
+    .exp-burger-img {
+        width: 50vw;
+    }
+
+    .feature-bold {
+        font-size: 9vw;
+    }
+
+    .exp-banner {
+        flex-wrap: wrap;
+        padding: 3vw 0;
+        gap: 3vw;
+    }
+
+    .exp-banner-text {
+        font-size: 3.5vw;
+    }
+
+    .exp-banner .dot {
+        font-size: 3vw;
+    }
+
+    /* Take Away Section Responsive */
+    .takeaway-section {
+        padding: 10vw 0;
+    }
+
+    .marquee-content span {
+        font-size: 8vw;
+    }
+
+    .takeaway-content {
+        padding: 0 8vw;
+        margin-bottom: 10vw;
+    }
+
+    .takeaway-title {
+        font-size: 12vw;
+    }
+
+    .takeaway-desc {
+        font-size: 4vw;
+    }
+
+    .locations-track span {
+        font-size: 8vw;
+    }
+
+    /* Story Section Responsive */
+    .story-section {
+        padding: 12vw 6vw;
+    }
+
+    .story-title {
+        font-size: 12vw;
+    }
+
+    .story-desc {
+        font-size: 5vw;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 6vw;
+    }
+
+    .story-img {
+        height: 50vw;
+    }
+
+    .story-city {
+        font-size: 7vw;
+    }
+
+    .story-text {
+        font-size: 4vw;
+    }
+
+    /* Feel It Section Responsive */
+    .feelit-section {
+        padding: 15vw 8vw;
+    }
+
+    .feelit-top-text {
+        font-size: 5vw;
+    }
+
+    .feelit-title {
+        font-size: 20vw;
+    }
+
+    .feelit-desc {
+        font-size: 4.5vw;
+        margin-bottom: 8vw;
+    }
+
+    /* Footer Responsive */
+    .footer {
+        padding: 8vw 6vw 6vw;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .footer-links a {
+        font-size: 5vw;
+    }
+
+    .footer-logo {
+        font-size: 15vw;
+    }
+
+    .footer-tagline {
+        font-size: 4vw;
+    }
+
+    .footer-copyright {
+        font-size: 3vw;
+    }
 }
