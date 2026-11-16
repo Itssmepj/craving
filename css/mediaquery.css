@@ -1,19 +1,47 @@
 @media screen and (max-width: 768px) {
-    .preloader-text {
-        font-size: 10vw;
+    :root {
+        --gutter: 4vw;
+    }
+
+    .stroke {
+        -webkit-text-stroke-width: 1.6vw;
+    }
+
+    .label {
+        font-size: 8vw;
+    }
+
+    .cursor-trail {
+        display: none;
+    }
+
+    /* Nav */
+    .navbar {
+        padding: 4vw;
     }
 
     .logo {
         font-size: 10vw;
     }
 
-    .btn-primary {
+    .nav-right {
+        gap: 3vw;
+        position: static;
+    }
+
+    .btn-primary,
+    .menu-toggle {
         font-size: 4vw;
+        border-width: 0.4vw;
+    }
+
+    .btn-primary {
         padding: 1.8vw 5vw;
     }
 
-    .menu-text {
-        font-size: 4vw;
+    .menu-toggle {
+        gap: 2vw;
+        padding: 1.8vw 4vw;
     }
 
     .hamburger {
@@ -25,24 +53,37 @@
         height: 0.5vw;
     }
 
+    .bar.bottom {
+        top: calc(100% - 0.5vw);
+    }
+
     .main-menu {
+        top: 100%;
+        right: 4.5vw;
         width: 91vw;
         border-radius: 4vw;
         padding: 6vw;
-        margin-top: 5vw;
+        gap: 2vw;
     }
 
     .main-menu a {
         font-size: 8vw;
     }
 
+    .menu-footer {
+        margin-top: 4vw;
+        padding-top: 3vw;
+    }
+
     .menu-footer p {
         font-size: 3.5vw;
     }
 
+    /* Hero */
     .hero-section {
-        padding-top: 40vw;
         height: 200vw;
+        min-height: 0;
+        padding-top: 40vw;
         padding-bottom: 2vw;
     }
 
@@ -53,17 +94,18 @@
 
     .hero-subtitle {
         font-size: 6vw;
-        transform: none !important;
     }
 
     .hero-subtitle.top-left {
-        top: 2%;
+        top: -45%;
         left: 2%;
+        transform: none;
     }
 
     .hero-subtitle.bottom-right {
-        bottom: 2%;
+        bottom: -45%;
         right: 2%;
+        transform: none;
     }
 
     .hero-image-wrapper {
@@ -74,236 +116,345 @@
     }
 
     .hero-crav-text {
-        font-size: 20vw;
-        margin-top: 6vw;
         position: absolute;
         top: 133vw;
+        margin-top: 6vw;
         transform: translateY(-50%);
+        font-size: 20vw;
     }
 
     .hero-footer {
+        position: static;
         flex-direction: column;
         align-items: center;
         gap: 4vw;
         padding: 0 5vw;
-        position: static;
-        margin-top: auto;
     }
 
-    .hero-desc {
+    .hero-desc,
+    .hero-desc.right {
         width: 100%;
-    }
-
-    .hero-desc p, .hero-desc.right p {
-        font-size: 4vw;
+        font-size: 5vw;
         text-align: center;
     }
 
-    .about-section {
-        padding-top: 10vw;
-    }
-
-    .about-top-text {
-        font-size: 8vw;
-        width: fit-content;
-        margin: 0 auto;
-        top: 0;
+    /* About */
+    .about-label {
+        transform: none;
+        margin-bottom: 6vw;
     }
 
     .about-title {
-        font-size: 15vw;
         width: 100%;
-        line-height: 0.9;
+        font-size: 22vw;
     }
 
     .about-desc {
-        font-size: 4vw;
         width: 90%;
-        margin-top: 6vw;
+        margin-top: 8vw;
+        font-size: 5vw;
     }
 
-    .btn-order {
-        font-size: 5vw;
+    .about-btn-container {
+        margin: 6vw auto 8vw;
+    }
+
+    .btn-blob span {
         padding: 4vw 10vw;
+        font-size: 5vw;
     }
 
     .about-images-container {
         padding: 0 4vw 12vw;
     }
 
-    .floating-sticker {
-        width: 25vw;
-        top: -30vw;
-        left: -4vw;
-    }
-
     .about-grid {
         display: flex;
-        flex-wrap: nowrap;
         align-items: flex-end;
         justify-content: center;
         gap: 2vw;
-        max-width: 100%;
-        padding-top: 4vw;
-        padding-bottom: 2vw;
+        max-width: none;
+        width: 100%;
+        padding: 4vw 0 2vw;
     }
 
     .about-img-item {
         width: 35vw;
         height: 38vw;
         flex-shrink: 0;
+        transform-origin: bottom;
     }
 
-    .img-1 { transform: rotate(-12deg) translateY(3vw); }
-    .img-2 { transform: translateY(-6vw); z-index: 10; }
-    .img-3 { transform: rotate(12deg) translateY(3vw); }
+    .img-1 {
+        transform: rotate(-12deg) translateY(3vw);
+    }
 
-    /* Experience Section Responsive */
+    .img-2 {
+        transform: translateY(-6vw);
+        z-index: 10;
+    }
+
+    .img-3 {
+        transform: rotate(12deg) translateY(3vw);
+    }
+
+    .about-img-item:hover {
+        transform: translateY(-6vw) scale(1.05);
+    }
+
+    /* Stickers */
+    .sticker-selfie {
+        width: 25vw;
+        top: -30vw;
+        left: 0;
+    }
+
+    .sticker-fries {
+        width: 22vw;
+        top: 30vw;
+        left: 0;
+    }
+
+    .sticker-burger {
+        width: 28vw;
+        top: 34vw;
+        right: -2vw;
+    }
+
+    .sticker-boy {
+        width: 44vw;
+        left: auto;
+        right: 0;
+        bottom: 82vw;
+    }
+
+    /* Experience */
     .experience-section {
-        padding: 15vw 0 8vw;
+        margin-top: -10vw;
+        padding-top: 34vw;
     }
 
-    .exp-top-text {
-        font-size: 5vw;
+    .exp-label {
+        transform: none;
+        font-size: 7vw;
+        margin-bottom: 5vw;
     }
 
     .exp-title {
-        font-size: 15vw;
-        -webkit-text-stroke: 1px var(--color-black);
+        font-size: 22vw;
     }
 
-    .exp-features {
-        flex-direction: column;
-        gap: 8vw;
+    .exp-stage {
+        margin-top: 12vw;
+        padding-bottom: 30vw;
     }
 
-    .feature-highlight {
-        font-size: 8vw;
+    .exp-burger {
+        width: 100vw;
+        margin-bottom: 0;
     }
 
-    .feature-text {
-        font-size: 4vw;
+    .exp-bold {
+        font-size: 6vw;
     }
 
-    .exp-burger-img {
-        width: 50vw;
+    .exp-side {
+        bottom: 6vw;
+        font-size: 6vw;
     }
 
-    .feature-bold {
-        font-size: 9vw;
+    /* Cheesy */
+    .cheesy-section {
+        height: 70vh;
     }
 
-    .exp-banner {
-        flex-wrap: wrap;
-        padding: 3vw 0;
-        gap: 3vw;
+    /* Ingredients */
+    .ingredients-section {
+        padding: 14vw var(--gutter) 24vw;
     }
 
-    .exp-banner-text {
-        font-size: 3.5vw;
-    }
-
-    .exp-banner .dot {
-        font-size: 3vw;
-    }
-
-    /* Take Away Section Responsive */
-    .takeaway-section {
-        padding: 10vw 0;
-    }
-
-    .marquee-content span {
-        font-size: 8vw;
-    }
-
-    .takeaway-content {
-        padding: 0 8vw;
+    .ing-label {
+        transform: none;
         margin-bottom: 10vw;
     }
 
-    .takeaway-title {
-        font-size: 12vw;
+    .ing-title > span {
+        width: 100%;
+        font-size: 22vw;
     }
 
-    .takeaway-desc {
-        font-size: 4vw;
+    .ing-lettuce {
+        width: 30vw;
+        left: 3vw;
+        top: 22vw;
     }
 
-    .locations-track span {
-        font-size: 8vw;
+    .ing-tomato {
+        width: 24vw;
+        right: 3vw;
+        top: 34vw;
     }
 
-    /* Story Section Responsive */
-    .story-section {
-        padding: 12vw 6vw;
+    .ing-cheese {
+        width: 32vw;
+        left: 3vw;
+        top: 72vw;
     }
 
-    .story-title {
-        font-size: 12vw;
+    .ing-meat {
+        width: 28vw;
+        right: 4vw;
+        bottom: 6vw;
     }
 
-    .story-desc {
+    /* Map: stacked column with a straight dashed route */
+    .map-section {
+        height: auto;
+        padding-bottom: 14vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-path,
+    .plane {
+        display: none;
+    }
+
+    .map-section::before {
+        content: "";
+        position: absolute;
+        top: 120vw;
+        bottom: 20vw;
+        left: 50%;
+        border-left: 1vw dashed rgba(244, 168, 4, 0.7);
+    }
+
+    .map-intro {
+        padding: 30vw var(--gutter) 16vw;
+        text-align: center;
+    }
+
+    .map-label {
+        margin: 0 auto 6vw;
+        transform: none;
+    }
+
+    .map-title {
+        width: 100%;
+        padding: 0;
+        font-size: 22vw;
+        -webkit-text-stroke-width: 1.6vw;
+    }
+
+    .map-desc {
+        width: 80%;
+        margin: 6vw auto 0;
         font-size: 5vw;
     }
 
-    .story-grid {
-        grid-template-columns: 1fr;
-        gap: 6vw;
+    .city {
+        position: relative;
+        inset: auto;
+        align-items: center;
+        gap: 3vw;
+        margin-bottom: 22vw;
     }
 
-    .story-img {
-        height: 50vw;
+    .city:last-child {
+        margin-bottom: 0;
     }
 
-    .story-city {
+    .city-label {
         font-size: 7vw;
+        transform: none;
     }
 
-    .story-text {
-        font-size: 4vw;
+    .city-img {
+        width: 60vw;
+        height: 66vw;
+        border-radius: 5vw;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
 
-    /* Feel It Section Responsive */
-    .feelit-section {
-        padding: 15vw 8vw;
+    /* CTA */
+    .cta-section {
+        padding-top: 26vw;
     }
 
-    .feelit-top-text {
+    .cta-inner {
+        flex-direction: column;
+        gap: 8vw;
+        margin-bottom: 10vw;
+        padding: 0 var(--gutter);
+    }
+
+    .cta-copy {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        gap: 5vw;
+    }
+
+    .cta-label {
+        transform: none;
+        margin: 0;
+    }
+
+    .cta-title {
+        font-size: 24vw;
+        line-height: 0.85;
+    }
+
+    .cta-desc {
+        width: 100%;
         font-size: 5vw;
     }
 
-    .feelit-title {
-        font-size: 20vw;
+    .cta-img {
+        width: 100%;
+        height: 100vw;
+        border-radius: 4vw;
     }
 
-    .feelit-desc {
-        font-size: 4.5vw;
-        margin-bottom: 8vw;
-    }
-
-    /* Footer Responsive */
+    /* Footer */
     .footer {
-        padding: 8vw 6vw 6vw;
+        padding: 4vw var(--gutter) 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 4vw;
+        padding-bottom: 5vw;
     }
 
     .footer-links {
-        flex-direction: column;
-        gap: 4vw;
+        justify-content: center;
+        gap: 2vw 5vw;
     }
 
-    .footer-links a {
+    .footer-links a,
+    .footer-copyright,
+    .footer-tagline {
         font-size: 5vw;
     }
 
-    .footer-logo {
-        font-size: 15vw;
-    }
-
     .footer-tagline {
-        font-size: 4vw;
+        padding-top: 4vw;
+        text-align: center;
     }
 
-    .footer-copyright {
-        font-size: 3vw;
+    .footer-brand {
+        margin-top: 12vw;
+    }
+
+    .juggle img {
+        scale: 1.6;
+    }
+
+    .footer-logo {
+        transform: none;
+        padding-bottom: 4vw;
     }
 }
