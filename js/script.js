@@ -170,8 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const section = $('#map');
         if (!path || !plane) return;
         const length = path.getTotalLength();
-        // plane.png is drawn with its nose pointing straight up
-        const NOSE_OFFSET = 90;
+        // plane.png is drawn with its nose pointing straight down (+90deg in screen space),
+        // so rotate it by -90deg to put the nose along the direction of travel
+        const NOSE_OFFSET = -90;
         // sample the route so the plane can be kept level with the middle of the viewport
         const SAMPLES = 400;
         const sampleY = Array.from({ length: SAMPLES + 1 }, (_, i) => path.getPointAtLength((i / SAMPLES) * length).y);
