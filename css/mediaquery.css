@@ -1,0 +1,460 @@
+@media screen and (max-width: 768px) {
+    :root {
+        --gutter: 4vw;
+    }
+
+    .stroke {
+        -webkit-text-stroke-width: 1.6vw;
+    }
+
+    .label {
+        font-size: 8vw;
+    }
+
+    .cursor-trail {
+        display: none;
+    }
+
+    /* Nav */
+    .navbar {
+        padding: 4vw;
+    }
+
+    .logo {
+        font-size: 10vw;
+    }
+
+    .nav-right {
+        gap: 3vw;
+        position: static;
+    }
+
+    .btn-primary,
+    .menu-toggle {
+        font-size: 4vw;
+        border-width: 0.4vw;
+    }
+
+    .btn-primary {
+        padding: 1.8vw 5vw;
+    }
+
+    .menu-toggle {
+        gap: 2vw;
+        padding: 1.8vw 4vw;
+    }
+
+    .hamburger {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .bar {
+        height: 0.5vw;
+    }
+
+    .bar.bottom {
+        top: calc(100% - 0.5vw);
+    }
+
+    .main-menu {
+        top: 100%;
+        right: 4.5vw;
+        width: 91vw;
+        border-radius: 4vw;
+        padding: 6vw;
+        gap: 2vw;
+    }
+
+    .main-menu a {
+        font-size: 8vw;
+    }
+
+    .menu-footer {
+        margin-top: 4vw;
+        padding-top: 3vw;
+    }
+
+    .menu-footer p {
+        font-size: 3.5vw;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 200vw;
+        min-height: 0;
+        padding-top: 40vw;
+        padding-bottom: 2vw;
+    }
+
+    .hero-title {
+        font-size: 26vw;
+        line-height: 0.85;
+    }
+
+    .hero-subtitle {
+        font-size: 6vw;
+    }
+
+    .hero-subtitle.top-left {
+        top: -45%;
+        left: 2%;
+        transform: none;
+    }
+
+    .hero-subtitle.bottom-right {
+        bottom: -45%;
+        right: 2%;
+        transform: none;
+    }
+
+    .hero-image-wrapper {
+        width: 80vw;
+        height: 80vw;
+        top: 110vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-crav-text {
+        position: absolute;
+        top: 133vw;
+        margin-top: 6vw;
+        transform: translateY(-50%);
+        font-size: 20vw;
+    }
+
+    .hero-footer {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+        padding: 0 5vw;
+    }
+
+    .hero-desc,
+    .hero-desc.right {
+        width: 100%;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    /* About */
+    .about-label {
+        transform: none;
+        margin-bottom: 6vw;
+    }
+
+    .about-title {
+        width: 100%;
+        font-size: 22vw;
+    }
+
+    .about-desc {
+        width: 90%;
+        margin-top: 8vw;
+        font-size: 5vw;
+    }
+
+    .about-btn-container {
+        margin: 6vw auto 8vw;
+    }
+
+    .btn-blob span {
+        padding: 4vw 10vw;
+        font-size: 5vw;
+    }
+
+    .about-images-container {
+        padding: 0 4vw 12vw;
+    }
+
+    .about-grid {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 2vw;
+        max-width: none;
+        width: 100%;
+        padding: 4vw 0 2vw;
+    }
+
+    .about-img-item {
+        width: 35vw;
+        height: 38vw;
+        flex-shrink: 0;
+        transform-origin: bottom;
+    }
+
+    .img-1 {
+        transform: rotate(-12deg) translateY(3vw);
+    }
+
+    .img-2 {
+        transform: translateY(-6vw);
+        z-index: 10;
+    }
+
+    .img-3 {
+        transform: rotate(12deg) translateY(3vw);
+    }
+
+    .about-img-item:hover {
+        transform: translateY(-6vw) scale(1.05);
+    }
+
+    /* Stickers */
+    .sticker-selfie {
+        width: 25vw;
+        top: -30vw;
+        left: 0;
+    }
+
+    .sticker-fries {
+        width: 22vw;
+        top: 30vw;
+        left: 0;
+    }
+
+    .sticker-burger {
+        width: 28vw;
+        top: 34vw;
+        right: -2vw;
+    }
+
+    .sticker-boy {
+        width: 44vw;
+        left: auto;
+        right: 0;
+        bottom: 82vw;
+    }
+
+    /* Experience */
+    .experience-section {
+        margin-top: -10vw;
+        padding-top: 34vw;
+    }
+
+    .exp-label {
+        transform: none;
+        font-size: 7vw;
+        margin-bottom: 5vw;
+    }
+
+    .exp-title {
+        font-size: 22vw;
+    }
+
+    .exp-stage {
+        margin-top: 12vw;
+        padding-bottom: 30vw;
+    }
+
+    .exp-burger {
+        width: 100vw;
+        margin-bottom: 0;
+    }
+
+    .exp-bold {
+        font-size: 6vw;
+    }
+
+    .exp-side {
+        bottom: 6vw;
+        font-size: 6vw;
+    }
+
+    /* Cheesy */
+    .cheesy-section {
+        height: 70vh;
+    }
+
+    /* Ingredients */
+    .ingredients-section {
+        padding: 14vw var(--gutter) 24vw;
+    }
+
+    .ing-label {
+        transform: none;
+        margin-bottom: 10vw;
+    }
+
+    .ing-title > span {
+        width: 100%;
+        font-size: 22vw;
+    }
+
+    .ing-lettuce {
+        width: 30vw;
+        left: 3vw;
+        top: 22vw;
+    }
+
+    .ing-tomato {
+        width: 24vw;
+        right: 3vw;
+        top: 34vw;
+    }
+
+    .ing-cheese {
+        width: 32vw;
+        left: 3vw;
+        top: 72vw;
+    }
+
+    .ing-meat {
+        width: 28vw;
+        right: 4vw;
+        bottom: 6vw;
+    }
+
+    /* Map: stacked column with a straight dashed route */
+    .map-section {
+        height: auto;
+        padding-bottom: 14vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-path,
+    .plane {
+        display: none;
+    }
+
+    .map-section::before {
+        content: "";
+        position: absolute;
+        top: 120vw;
+        bottom: 20vw;
+        left: 50%;
+        border-left: 1vw dashed rgba(244, 168, 4, 0.7);
+    }
+
+    .map-intro {
+        padding: 30vw var(--gutter) 16vw;
+        text-align: center;
+    }
+
+    .map-label {
+        margin: 0 auto 6vw;
+        transform: none;
+    }
+
+    .map-title {
+        width: 100%;
+        padding: 0;
+        font-size: 22vw;
+        -webkit-text-stroke-width: 1.6vw;
+    }
+
+    .map-desc {
+        width: 80%;
+        margin: 6vw auto 0;
+        font-size: 5vw;
+    }
+
+    .city {
+        position: relative;
+        inset: auto;
+        align-items: center;
+        gap: 3vw;
+        margin-bottom: 22vw;
+    }
+
+    .city:last-child {
+        margin-bottom: 0;
+    }
+
+    .city-label {
+        font-size: 7vw;
+        transform: none;
+    }
+
+    .city-img {
+        width: 60vw;
+        height: 66vw;
+        border-radius: 5vw;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CTA */
+    .cta-section {
+        padding-top: 26vw;
+    }
+
+    .cta-inner {
+        flex-direction: column;
+        gap: 8vw;
+        margin-bottom: 10vw;
+        padding: 0 var(--gutter);
+    }
+
+    .cta-copy {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        gap: 5vw;
+    }
+
+    .cta-label {
+        transform: none;
+        margin: 0;
+    }
+
+    .cta-title {
+        font-size: 24vw;
+        line-height: 0.85;
+    }
+
+    .cta-desc {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .cta-img {
+        width: 100%;
+        height: 100vw;
+        border-radius: 4vw;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 4vw var(--gutter) 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 4vw;
+        padding-bottom: 5vw;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 2vw 5vw;
+    }
+
+    .footer-links a,
+    .footer-copyright,
+    .footer-tagline {
+        font-size: 5vw;
+    }
+
+    .footer-tagline {
+        padding-top: 4vw;
+        text-align: center;
+    }
+
+    .footer-brand {
+        margin-top: 12vw;
+    }
+
+    .juggle img {
+        scale: 1.6;
+    }
+
+    .footer-logo {
+        transform: none;
+        padding-bottom: 4vw;
+    }
+}
