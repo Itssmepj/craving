@@ -522,7 +522,7 @@ button:hover .roll > span + span {
     margin-top: 15vw;
     transform: translateY(-9vw);
     font-family: var(--font-modak);
-    font-size: 15vw;
+    font-size: 11vw;
     line-height: 1.5;
     text-align: center;
     color: var(--color-mustard-dark);
@@ -1232,7 +1232,8 @@ button:hover .roll > span + span {
     z-index: 10;
     font-family: var(--font-modak);
     font-weight: 400;
-    font-size: 35vw;
+    font-size: 24vw;
+    white-space: nowrap;
     line-height: 0.5;
     text-align: center;
     color: var(--color-red);
