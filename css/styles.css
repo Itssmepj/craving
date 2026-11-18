@@ -1232,7 +1232,7 @@ button:hover .roll > span + span {
     z-index: 10;
     font-family: var(--font-modak);
     font-weight: 400;
-    font-size: 24vw;
+    font-size: 19vw;
     white-space: nowrap;
     line-height: 0.5;
     text-align: center;
