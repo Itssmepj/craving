@@ -1193,6 +1193,16 @@ button:hover .roll > span + span {
     opacity: 0.8;
 }
 
+.footer-copyright a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    transition: color 0.15s;
+}
+
+.footer-copyright a:hover {
+    color: var(--color-red);
+}
+
 .footer-line {
     height: 2px;
     background: rgba(27, 27, 27, 0.2);
