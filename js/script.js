@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Smashing the patty...',
         'Melting the cheddar...',
         'Searing the glazed patty...',
-        'Ready to CRAV!',
+        'Ready to CRAVING!',
     ];
 
     function finishLoading() {

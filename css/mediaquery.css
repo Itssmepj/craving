@@ -120,7 +120,7 @@
         top: 133vw;
         margin-top: 6vw;
         transform: translateY(-50%);
-        font-size: 20vw;
+        font-size: 12vw;
     }
 
     .hero-footer {
@@ -455,6 +455,7 @@
 
     .footer-logo {
         transform: none;
+        font-size: 20vw;
         padding-bottom: 4vw;
     }
 }
